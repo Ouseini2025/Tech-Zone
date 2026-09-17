@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produits | Tech Zone</title>
+
+    <meta name="description"
+        content="Découvrez les ordinateurs, composants et équipements informatiques disponibles chez Tech Zone.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dossier_style/style.css">
+    <link rel="stylesheet" href="dossier_style/produits.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo-link">
+
+                <img src="dossier_style/Design sans titre (5)-Photoroom - Copie.png"
+                    alt="Logo Tech Zone"
+                    class="logo">
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="produits.html" class="active">
+                        Produits
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#apropos">
+                        À propos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- BOUTON -->
+
+            <a href="passed-commande.html" class="nav-button">
+                Passer commande
+            </a>
+
+
+            <!-- MENU BURGER -->
+
+            <button class="burger-button"
+                aria-label="Ouvrir le menu"
+                type="button">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+
+
+        <!-- MENU MOBILE -->
+
+        <div class="mobile-menu">
+
+            <a href="index.html">
+                Accueil
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="produits.html">
+                Produits
+            </a>
+
+            <a href="index.html#apropos">
+                À propos
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+            <div class="mobile-divider"></div>
+
+            <a href="passed-commande.html"
+                class="mobile-button">
+
+                Passer commande
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="products-hero">
+
+            <div class="products-hero-content">
+
+                <span class="section-label">
+
+                    <i class="fa-solid fa-store"></i>
+
+                    BOUTIQUE TECH ZONE
+
+                </span>
+
+
+                <h1>
+
+                    La technologie qui
+                    <span>booste ta zone.</span>
+
+                </h1>
+
+
+                <p>
+
+                    Ordinateurs, composants et équipements
+                    informatiques sélectionnés pour répondre
+                    à vos besoins.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#catalogue"
+                        class="action-button">
+
+                        Explorer le catalogue
+
+                        <i class="fa-solid fa-arrow-down"></i>
+
+                    </a>
+
+
+                    <a href="https://wa.me/242067537383"
+                        class="action-button pro"
+                        target="_blank">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Demander un produit
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CATALOGUE ================= -->
+
+        <section class="catalogue" id="catalogue">
+
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    NOS PRODUITS
+                </span>
+
+
+                <h2>
+                    Trouve ton prochain équipement.
+                </h2>
+
+
+                <p>
+                    Parcours notre sélection de produits informatiques.
+                </p>
+
+            </div>
+
+
+
+            <!-- OUTILS -->
+
+            <div class="catalogue-tools">
+
+
+                <!-- RECHERCHE -->
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Rechercher un produit..."
+                        autocomplete="off">
+
+                </div>
+
+
+
+                <!-- FILTRES -->
+
+                <div class="filters">
+
+                    <button
+                        class="filter-btn active"
+                        data-category="all"
+                        type="button">
+
+                        Tous
+
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-category="pc"
+                        type="button">
+
+                        <i class="fa-solid fa-laptop"></i>
+
+                        PC & Laptop
+
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-category="composants"
+                        type="button">
+
+                        <i class="fa-solid fa-microchip"></i>
+
+                        Composants
+
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-category="accessoires"
+                        type="button">
+
+                        <i class="fa-solid fa-keyboard"></i>
+
+                        Accessoires
+
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-category="gaming"
+                        type="button">
+
+                        <i class="fa-solid fa-gamepad"></i>
+
+                        Gaming
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUITS -->
+
+            <div
+                class="products-grid"
+                id="productsGrid">
+
+            </div>
+
+
+
+            <!-- AUCUN RESULTAT -->
+
+            <div
+                class="no-result"
+                id="noResult">
+
+                <i class="fa-solid fa-box-open"></i>
+
+                <h3>
+                    Aucun produit trouvé
+                </h3>
+
+                <p>
+                    Essaie une autre recherche ou une autre catégorie.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="products-cta">
+
+            <div>
+
+                <span class="section-label">
+                    BESOIN D'UN PRODUIT PARTICULIER ?
+                </span>
+
+
+                <h2>
+                    Nous pouvons le rechercher pour vous.
+                </h2>
+
+
+                <p>
+                    Tu recherches un modèle précis, un ordinateur,
+                    une pièce ou un accessoire ?
+                </p>
+
+            </div>
+
+
+            <a href="https://wa.me/242067537383"
+                class="action-button"
+                target="_blank">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Contacter Tech Zone
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h3>
+                    TECH ZONE
+                </h3>
+
+                <p>
+                    Vente, services informatiques et solutions digitales.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Navigation
+                </h4>
+
+                <a href="index.html">
+                    Accueil
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="produits.html">
+                    Produits
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="mailto:ouseinizebret@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    ouseinizebret@gmail.com
+                </a>
+
+                <a href="https://wa.me/242067537383"
+                    target="_blank">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Tech Zone. Tous droits réservés.
+            </p>
+
+            <p>
+                Boost ta zone, choisis Tech Zone.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="dossier_style/produits.js"></script>
+
+</body>
+
+</html>

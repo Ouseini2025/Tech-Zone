@@ -1,0 +1,723 @@
+
+/* =========================================================
+   TECH ZONE
+   PAGE SERVICES
+========================================================= */
+
+
+/* ================= HERO ================= */
+
+.services-hero {
+
+    min-height: 90vh;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 150px 30px 90px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.services-hero-content {
+
+    max-width: 650px;
+}
+
+
+.services-hero h1 {
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1.04;
+
+    letter-spacing: -3px;
+
+    color: var(--white);
+
+    margin-bottom: 25px;
+}
+
+
+.services-hero h1 span {
+
+    color: var(--primary);
+}
+
+
+.services-hero-content > p {
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    max-width: 580px;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================= HERO VISUAL ================= */
+
+.services-hero-visual {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 450px;
+}
+
+
+.services-orbit {
+
+    width: 360px;
+
+    height: 360px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(141, 159, 8, 0.15);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 80px rgba(141, 159, 8, 0.06);
+
+    animation: rotate-orbit 20s linear infinite;
+}
+
+
+.services-orbit::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border: 1px dashed rgba(141, 159, 8, 0.2);
+
+    border-radius: 50%;
+}
+
+
+.orbit-center {
+
+    width: 110px;
+
+    height: 110px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(141, 159, 8, 0.12);
+
+    border: 1px solid rgba(141, 159, 8, 0.4);
+
+    border-radius: 25px;
+
+    color: var(--primary-light);
+
+    font-size: 45px;
+
+    box-shadow:
+        0 0 50px rgba(141, 159, 8, 0.12);
+}
+
+
+.orbit-item {
+
+    position: absolute;
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    color: var(--primary-light);
+
+    font-size: 19px;
+
+    animation: counter-rotate 20s linear infinite;
+}
+
+
+.orbit-1 {
+
+    top: 10px;
+
+    left: 150px;
+}
+
+
+.orbit-2 {
+
+    right: 15px;
+
+    top: 150px;
+}
+
+
+.orbit-3 {
+
+    bottom: 10px;
+
+    left: 150px;
+}
+
+
+.orbit-4 {
+
+    left: 15px;
+
+    top: 150px;
+}
+
+
+@keyframes rotate-orbit {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes counter-rotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+
+}
+
+
+/* ================= SERVICES GRID ================= */
+
+.services-list {
+
+    border-top: 1px solid var(--border);
+}
+
+
+.services-detail-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.service-detail {
+
+    position: relative;
+
+    min-height: 440px;
+
+    padding: 30px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    transition: var(--transition);
+
+    overflow: hidden;
+}
+
+
+.service-detail::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    right: -90px;
+
+    bottom: -90px;
+
+    background: rgba(141, 159, 8, 0.06);
+
+    border-radius: 50%;
+
+    transition: var(--transition);
+}
+
+
+.service-detail:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(141, 159, 8, 0.35);
+
+    background: var(--surface-light);
+}
+
+
+.service-detail:hover::before {
+
+    transform: scale(1.4);
+}
+
+
+.featured-service {
+
+    border-color: rgba(141, 159, 8, 0.35);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(141, 159, 8, 0.1),
+            var(--surface)
+        );
+}
+
+
+/* HEADER */
+
+.detail-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+.detail-header > span {
+
+    color: rgba(255, 255, 255, 0.18);
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+.detail-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(141, 159, 8, 0.1);
+
+    color: var(--primary-light);
+
+    border: 1px solid rgba(141, 159, 8, 0.15);
+
+    border-radius: 14px;
+
+    font-size: 21px;
+}
+
+
+/* TEXT */
+
+.service-detail h3 {
+
+    color: var(--white);
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+.service-detail > p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* LIST */
+
+.service-detail ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+.service-detail li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+
+.service-detail li i {
+
+    color: var(--primary);
+
+    font-size: 10px;
+}
+
+
+/* LINK */
+
+.service-link {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 30px;
+
+    color: var(--primary-light);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.service-link i {
+
+    margin-left: 7px;
+
+    transition: var(--transition);
+}
+
+
+.service-link:hover i {
+
+    transform: translateX(5px);
+}
+
+
+/* ================= PROCESS ================= */
+
+.process-section {
+
+    background: var(--background-secondary);
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.process-step {
+
+    position: relative;
+
+    padding: 30px;
+
+    min-height: 220px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    transition: var(--transition);
+}
+
+
+.process-step:hover {
+
+    transform: translateY(-5px);
+
+    border-color: rgba(141, 159, 8, 0.3);
+}
+
+
+.process-number {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
+    color: rgba(255, 255, 255, 0.12);
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+.process-step > i {
+
+    color: var(--primary-light);
+
+    font-size: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.process-step h3 {
+
+    color: var(--white);
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+
+.process-step p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .services-hero {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+
+    .services-hero-content {
+
+        margin: auto;
+    }
+
+
+    .services-hero-content .hero-buttons {
+
+        justify-content: center;
+    }
+
+
+    .services-hero-visual {
+
+        min-height: 380px;
+    }
+
+
+    .services-detail-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .services-hero {
+
+        padding: 120px 20px 70px;
+    }
+
+
+    .services-hero h1 {
+
+        font-size: clamp(40px, 11vw, 58px);
+
+        letter-spacing: -2px;
+    }
+
+
+    .services-hero-content > p {
+
+        font-size: 14px;
+    }
+
+
+    .services-hero-content .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .services-hero-content .btn {
+
+        width: 100%;
+    }
+
+
+    .services-hero-visual {
+
+        min-height: 350px;
+    }
+
+
+    .services-orbit {
+
+        width: 280px;
+
+        height: 280px;
+    }
+
+
+    .services-orbit::before {
+
+        width: 190px;
+
+        height: 190px;
+    }
+
+
+    .orbit-center {
+
+        width: 85px;
+
+        height: 85px;
+
+        font-size: 32px;
+    }
+
+
+    .orbit-item {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 15px;
+    }
+
+
+    .orbit-1,
+    .orbit-3 {
+
+        left: 116px;
+    }
+
+
+    .orbit-2 {
+
+        right: 4px;
+
+        top: 116px;
+    }
+
+
+    .orbit-4 {
+
+        left: 4px;
+
+        top: 116px;
+    }
+
+
+    .services-detail-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-detail {
+
+        min-height: 420px;
+    }
+
+
+    .process-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}

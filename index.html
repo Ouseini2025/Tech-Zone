@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tech Zone - Vente informatique, maintenance, développement web, IA et solutions digitales.">
+    <title>Tech Zone | Solutions informatiques & digitales</title> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer"> <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="dossier_style/style.css">
+</head>
+
+<body> <!-- ================= HEADER ================= -->
+    <header class="header">
+        <nav class="navbar"> <!-- LOGO --> <a href="index.html" class="logo-link"> <img
+                    src="dossier_style/Design sans titre (5)-Photoroom - Copie.png" alt="Logo Tech Zone" class="logo">
+            </a> <!-- NAVIGATION DESKTOP -->
+            <ul class="nav-links">
+                <li> <a href="index.html" class="active">Accueil</a> </li>
+                <li> <a href="services.html">Services</a> </li>
+                <li> <a href="produits.html">Produits</a> </li>
+                <li> <a href="#pourquoi">Pourquoi nous ?</a></li>
+                <li><a href="#fonctionnement"> Comment ça marche</a></li>
+                <li> <a href="#apropos">À propos</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+</ul> <!-- BOUTON --> <a href="passed-commande.html" class="nav-button"> Passer commande </a> <!-- MENU BURGER -->
+            <button class="burger-button" aria-label="Ouvrir le menu"> <i class="fa-solid fa-bars"></i> </button>
+        </nav> <!-- MENU MOBILE -->
+        <div class="mobile-menu">
+             <a href="index.html">Accueil</a> 
+             <a href="services.html">Services</a> 
+             <a href="produits.html">Produits</a> 
+             <a href="#pourquoi">Pourquoi nous ?</a>
+             <a href="#apropos">À propos</a> 
+             <a href="#contact">Contact</a>
+            <div class="mobile-divider"></div> 
+<a href="passed-commande.html" class="mobile-cta"> Passer commande </a>
+        </div>
+    </header> <!-- ================= MAIN ================= -->
+    <main> <!-- ================= HERO ================= -->
+        <section class="hero" id="accueil">
+            <div class="hero-content"> <span class="hero-badge"> <i class="fa-solid fa-microchip"></i> Technologie •
+                    Innovation • Solutions </span>
+                <h1> La technologie qui <span>fait avancer</span> tes projets. </h1>
+                <p> Tech Zone vous accompagne dans la vente informatique, la maintenance, le développement web et la
+                    création de solutions digitales adaptées à vos besoins. </p>
+                <div class="hero-buttons"> <a href="services.html" class="btn btn-primary">
+    Découvrir nos services
+    <i class="fa-solid fa-arrow-right"></i>
+</a> <a href="#contact" class="btn btn-secondary"> Nous
+                        contacter </a> </div>
+                <div class="hero-stats">
+                    <div class="stat"> <strong>PC</strong> <span>Informatique</span> </div>
+                    <div class="stat"> <strong>WEB</strong> <span>Développement</span> </div>
+                    <div class="stat"> <strong>IA</strong> <span>Innovation</span> </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-card">
+                    <div class="card-top"> <span class="status"></span> <span>TECH ZONE</span> <i
+                            class="fa-solid fa-ellipsis"></i> </div>
+                    <div class="chip"> <i class="fa-solid fa-microchip"></i> </div>
+                    <h3> Solutions digitales </h3>
+                    <p> Construisons quelque chose de puissant. </p>
+                    <div class="card-lines"> <span></span> <span></span> <span></span> </div>
+                </div>
+                <div class="floating-icon icon-one"> <i class="fa-solid fa-code"></i> </div>
+                <div class="floating-icon icon-two"> <i class="fa-solid fa-robot"></i> </div>
+                <div class="floating-icon icon-three"> <i class="fa-solid fa-laptop"></i> </div>
+            </div>
+        </section> <!-- ================= SERVICES ================= -->
+        <section class="section services" id="services">
+            <div class="section-heading"> <span class="section-label"> NOS SERVICES </span>
+                <h2> Une zone. Plusieurs <span>solutions.</span> </h2>
+                <p> De l'ordinateur que vous recherchez à la solution digitale dont votre entreprise a besoin. </p>
+            </div>
+            <div class="services-grid"> <!-- SERVICE 1 -->
+                <article class="service-card featured">
+                    <div class="service-icon"> <i class="fa-solid fa-laptop"></i> </div> <span class="service-number">
+                        01 </span>
+                    <h3> Informatique & PC </h3>
+                    <p> Ordinateurs portables, PC de bureau, composants, accessoires et équipements informatiques. </p>
+                    <a href="#produits"> Découvrir <i class="fa-solid fa-arrow-right"></i> </a>
+                </article> <!-- SERVICE 2 -->
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fa-solid fa-screwdriver-wrench"></i> </div> <span
+                        class="service-number"> 02 </span>
+                    <h3> Maintenance </h3>
+                    <p> Installation, configuration, dépannage, optimisation et entretien de vos équipements. </p> <a
+                        href="#contact"> En savoir plus <i class="fa-solid fa-arrow-right"></i> </a>
+                </article> <!-- SERVICE 3 -->
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fa-solid fa-code"></i> </div> <span class="service-number"> 03
+                    </span>
+                    <h3> Développement web </h3>
+                    <p> Sites vitrines, plateformes web et solutions digitales adaptées à vos projets. </p> <a
+                        href="#contact"> Démarrer un projet <i class="fa-solid fa-arrow-right"></i> </a>
+                </article> <!-- SERVICE 4 -->
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fa-solid fa-robot"></i> </div> <span class="service-number"> 04
+                    </span>
+                    <h3> IA & Automatisation </h3>
+                    <p> Intégration de l'intelligence artificielle et automatisation des tâches. </p> <a
+                        href="#contact"> Explorer <i class="fa-solid fa-arrow-right"></i> </a>
+                </article> <!-- SERVICE 5 -->
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fa-solid fa-building"></i> </div> <span class="service-number">
+                        05 </span>
+                    <h3> Solutions PME </h3>
+                    <p> Outils numériques pour la gestion, les ventes, les stocks et l'organisation des entreprises.
+                    </p> <a href="#contact"> Voir les solutions <i class="fa-solid fa-arrow-right"></i> </a>
+                </article> <!-- SERVICE 6 -->
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fa-solid fa-graduation-cap"></i> </div> <span
+                        class="service-number"> 06 </span>
+                    <h3> Tech & Conseils </h3>
+                    <p> Tutoriels, conseils et accompagnement pour mieux comprendre et utiliser la technologie. </p> <a
+                        href="#contact"> En savoir plus <i class="fa-solid fa-arrow-right"></i> </a>
+                </article>
+            </div>
+        </section> 
+        <!-- ================= PRODUITS ================= -->
+
+<section class="section products" id="produits">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            TECH ZONE STORE
+        </span>
+
+        <h2>
+            Ton prochain <span>équipement.</span>
+        </h2>
+
+        <p>
+            Une sélection de matériel informatique et gaming
+            pour travailler, apprendre, créer et jouer.
+        </p>
+
+    </div>
+
+
+    <div class="products-grid">
+
+        <!-- HP ELITEBOOK -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-badge">
+                    Populaire
+                </span>
+
+                <img
+                    src="images/hp-elitebook.jpg"
+                    alt="HP EliteBook 840 G4"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    PC & LAPTOP
+                </span>
+
+                <h3>
+                    HP EliteBook 840 G4
+                </h3>
+
+                <p>
+                    PC professionnel idéal pour les études,
+                    le travail et le développement.
+                </p>
+
+
+                <a
+                    href="produits.html"
+                    class="product-link"
+                >
+                    Voir le produit
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- THINKPAD -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-badge">
+                    Pro
+                </span>
+
+                <img
+                    src="images/thinkpad.jpg"
+                    alt="Lenovo ThinkPad"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    PC & LAPTOP
+                </span>
+
+                <h3>
+                    Lenovo ThinkPad
+                </h3>
+
+                <p>
+                    Un ordinateur robuste adapté au travail,
+                    aux études et au développement.
+                </p>
+
+
+                <a
+                    href="produits.html"
+                    class="product-link"
+                >
+                    Voir le produit
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- PC GAMING -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-badge">
+                    Gaming
+                </span>
+
+                <img
+                    src="images/pc-gaming.jpg"
+                    alt="PC Gaming"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    GAMING
+                </span>
+
+                <h3>
+                    PC Gaming
+                </h3>
+
+                <p>
+                    Des configurations adaptées au gaming
+                    et à la création.
+                </p>
+
+
+                <a
+                    href="produits.html"
+                    class="product-link"
+                >
+                    Voir les configurations
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- MACBOOK -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-badge">
+                    Apple
+                </span>
+
+                <img
+                    src="images/macbook.jpg"
+                    alt="MacBook"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    PC & LAPTOP
+                </span>
+
+                <h3>
+                    MacBook
+                </h3>
+
+                <p>
+                    Une machine adaptée au travail,
+                    à la création et au développement.
+                </p>
+
+
+                <a
+                    href="produits.html"
+                    class="product-link"
+                >
+                    Voir le produit
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- BOUTON CATALOGUE -->
+
+    <div class="products-more">
+
+        <a
+            href="produits.html"
+            class="btn btn-primary"
+        >
+
+            Voir tout le catalogue
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= POURQUOI TECH ZONE ================= -->
+
+<section class="section why-tech-zone" id="pourquoi">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            POURQUOI TECH ZONE ?
+        </span>
+
+        <h2>
+            La technologie, <span>sans complication.</span>
+        </h2>
+
+        <p>
+            Tech Zone t'accompagne pour choisir, installer,
+            utiliser et développer tes solutions technologiques.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <!-- 01 -->
+
+        <article class="why-card">
+
+            <div class="why-number">
+                01
+            </div>
+
+            <div class="why-icon">
+                <i class="fa-solid fa-wallet"></i>
+            </div>
+
+            <h3>
+                Technologie accessible
+            </h3>
+
+            <p>
+                Des équipements et solutions adaptés aux besoins
+                réels des étudiants, particuliers, entrepreneurs
+                et petites entreprises.
+            </p>
+
+        </article>
+
+
+        <!-- 02 -->
+
+        <article class="why-card">
+
+            <div class="why-number">
+                02
+            </div>
+
+            <div class="why-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+
+            <h3>
+                Des solutions pratiques
+            </h3>
+
+            <p>
+                Pas seulement du matériel. Nous proposons aussi
+                l'installation, la maintenance, le développement
+                et l'accompagnement technique.
+            </p>
+
+        </article>
+
+
+        <!-- 03 -->
+
+        <article class="why-card">
+
+            <div class="why-number">
+                03
+            </div>
+
+            <div class="why-icon">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+
+            <h3>
+                Une approche moderne
+            </h3>
+
+            <p>
+                Développement web, applications, intelligence
+                artificielle et automatisation pour répondre
+                aux nouveaux besoins numériques.
+            </p>
+
+        </article>
+
+
+        <!-- 04 -->
+
+        <article class="why-card">
+
+            <div class="why-number">
+                04
+            </div>
+
+            <div class="why-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h3>
+                Un accompagnement humain
+            </h3>
+
+            <p>
+                Nous cherchons d'abord à comprendre ton besoin
+                avant de proposer une solution adaptée à ton
+                projet et à ton budget.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+ <!-- ================= COMMENT ÇA MARCHE ================= -->
+
+<section class="section how-it-works" id="fonctionnement">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            NOTRE MÉTHODE
+        </span>
+
+        <h2>
+            De ton besoin à la <span>solution.</span>
+        </h2>
+
+        <p>
+            Un processus simple pour transformer ton besoin
+            technologique en une solution concrète.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+        <!-- ÉTAPE 1 -->
+
+        <article class="step">
+
+            <div class="step-number">
+                01
+            </div>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <div class="step-content">
+
+                <h3>
+                    Tu nous expliques ton besoin
+                </h3>
+
+                <p>
+                    Ordinateur, maintenance, site web,
+                    application ou solution pour ton entreprise :
+                    tu nous présentes simplement ton projet.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ÉTAPE 2 -->
+
+        <article class="step">
+
+            <div class="step-number">
+                02
+            </div>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="step-content">
+
+                <h3>
+                    Nous analysons
+                </h3>
+
+                <p>
+                    Nous identifions tes besoins, tes contraintes
+                    et ton budget afin de déterminer une approche
+                    adaptée à ton projet.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ÉTAPE 3 -->
+
+        <article class="step">
+
+            <div class="step-number">
+                03
+            </div>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <div class="step-content">
+
+                <h3>
+                    Nous proposons une solution
+                </h3>
+
+                <p>
+                    Tu reçois une proposition claire avec les
+                    équipements, services ou technologies
+                    nécessaires à la réalisation de ton projet.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ÉTAPE 4 -->
+
+        <article class="step">
+
+            <div class="step-number">
+                04
+            </div>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+
+            <div class="step-content">
+
+                <h3>
+                    Nous passons à l'action
+                </h3>
+
+                <p>
+                    Installation, développement, configuration
+                    ou accompagnement : nous mettons la solution
+                    en place et t'accompagnons dans son utilisation.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+ <!-- ================= À PROPOS ================= -->
+
+<section class="about" id="apropos">
+
+    <div class="about-content">
+
+        <span class="section-label">
+            À PROPOS DE TECH ZONE
+        </span>
+
+        <h2>
+            La technologie qui
+            <span>fait avancer</span>
+            tes projets.
+        </h2>
+
+        <p>
+            Tech Zone est une initiative orientée vers l'accès à
+            des équipements informatiques, des services techniques
+            et des solutions digitales adaptés aux besoins réels
+            des particuliers, étudiants, entrepreneurs et PME.
+        </p>
+
+        <p>
+            Notre objectif est de rendre la technologie plus
+            accessible et plus pratique, en combinant matériel,
+            services informatiques, développement logiciel,
+            intelligence artificielle et accompagnement.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+
+            Parlons de ton projet
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+
+    <div class="about-points">
+
+        <div>
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>
+                Technologie accessible
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>
+                Solutions adaptées aux besoins
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>
+                Services informatiques et digitaux
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>
+                Accompagnement des particuliers et PME
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <!-- ================= CONTACT ================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="contact-box">
+
+        <span class="section-label">
+            CONTACT
+        </span>
+
+        <h2>
+            Un projet en tête ?
+            <span>Parlons-en.</span>
+        </h2>
+
+        <p>
+            Besoin d'un ordinateur, d'une maintenance,
+            d'un site web ou d'une solution digitale ?
+            Contacte Tech Zone et explique-nous ton besoin.
+        </p>
+
+
+        <div class="contact-buttons">
+
+            <a
+                href="https://wa.me/242067537383"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Contacter sur WhatsApp
+
+            </a>
+
+
+            <a
+                href="mailto:ouseinizebret@gmail.com"
+                class="btn btn-secondary"
+            >
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Envoyer un email
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main> <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand"> <img src="dossier_style/Design sans titre (5)-Photoroom - Copie.png"
+                    alt="Tech Zone">
+                <p> Boost ta zone, choisis Tech Zone. </p>
+            </div>
+            <div class="footer-links">
+                <h4> Navigation </h4> <a href="#accueil">Accueil</a> <a href="services.html">Services</a> <a
+                    href="#produits">Produits</a> <a href="#apropos">À propos</a> <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4> Services </h4> <a href="services.html">Informatique</a> <a href="services.html">Maintenance</a>
+                 <a href="services.html">Développement</a> <a href="services.html">IA</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> © 2026 Tech Zone. Tous droits réservés. </p>
+            <div class="socials"> <a href="#" aria-label="Facebook"> <i class="fa-brands fa-facebook-f"></i> </a> <a
+                    href="#" aria-label="Instagram"> <i class="fa-brands fa-instagram"></i> </a> <a href="#"
+                    aria-label="TikTok"> <i class="fa-brands fa-tiktok"></i> </a> </div>
+        </div>
+    </footer> <!-- ================= JAVASCRIPT ================= -->
+    <script> const burgerButton = document.querySelector(".burger-button"); const mobileMenu = document.querySelector(".mobile-menu"); const burgerIcon = burgerButton.querySelector("i"); burgerButton.addEventListener("click", () => { mobileMenu.classList.toggle("open"); if (mobileMenu.classList.contains("open")) { burgerIcon.classList.remove("fa-bars"); burgerIcon.classList.add("fa-xmark"); } else { burgerIcon.classList.remove("fa-xmark"); burgerIcon.classList.add("fa-bars"); } }); // Fermer le menu lorsqu'on clique sur un lien document.querySelectorAll(".mobile-menu a").forEach(link => { link.addEventListener("click", () => { mobileMenu.classList.remove("open"); burgerIcon.classList.remove("fa-xmark"); burgerIcon.classList.add("fa-bars"); }); }); </script>
+</body>
+</html>
